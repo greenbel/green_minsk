@@ -6,4 +6,6 @@ Getting up:
 * Rails version: 5.2.3
 * DB: postgresql
 
+master<-dev
+
 The app which helps people find places where they can recycle trash.
