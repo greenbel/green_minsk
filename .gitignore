@@ -32,3 +32,6 @@
 
 # Ignore .env file
 .env
+
+.idea
+.DS_Store
