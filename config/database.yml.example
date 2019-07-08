@@ -1,0 +1,22 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  host: localhost
+  port: 5432
+  # For details on connection pooling, see Rails configuration guide
+  # http://guides.rubyonrails.org/configuring.html#database-pooling
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+
+development:
+  <<: *default
+  database: green_minsk_development
+
+test:
+  <<: *default
+  database: green_minsk_test
+
+production:
+  <<: *default
+  database: green_minsk_production
+  username: green_minsk
+  password: <%= ENV['GREEN_MINSK_DATABASE_PASSWORD'] %>
