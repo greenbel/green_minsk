@@ -9,3 +9,8 @@ Getting up:
 master<-dev
 
 The app which helps people find places where they can recycle trash.
+
+To run application use:
+```bin/server```
+Application running at:
+```http://localhost:5000/```
