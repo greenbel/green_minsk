@@ -9,6 +9,7 @@
 
 /config/puma.rb
 /config/database.yml
+/config/application.yml
 /config/credentials.yml.enc
 
 # Ignore all logfiles and tempfiles.
