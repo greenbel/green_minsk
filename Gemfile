@@ -18,6 +18,7 @@ gem 'uglifier', '>= 1.3.0'
 
 gem 'bootstrap', '~> 4.3', '>= 4.3.1'
 gem 'foreman', '~> 0.85.0'
+gem 'i18n-js'
 gem 'jquery-rails', '~> 4.3', '>= 4.3.5'
 gem 'pry', '~> 0.12.2'
 gem 'rubocop', '~> 0.72.0'
