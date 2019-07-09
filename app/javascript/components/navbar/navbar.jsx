@@ -1,5 +1,6 @@
 import React from 'react';
 import Navbar from 'react-bootstrap/Navbar'
+import I18n from 'i18n-js/index.js.erb'
 
 class MainNavbar extends React.Component {
     render () {
@@ -14,7 +15,7 @@ class MainNavbar extends React.Component {
                             height="30"
                             className="d-inline-block align-top"
                         />
-                        {' Green Minsk'}
+                        {I18n.t('welcome_page.organization_name')}
                     </Navbar.Brand>
                 </Navbar>
             </div>

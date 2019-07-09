@@ -1,6 +1,7 @@
 import React from 'react';
 import MainNavbar from 'components/navbar/navbar'
 import {Map, InfoWindow, Marker, GoogleApiWrapper} from 'google-maps-react';
+import I18n from 'i18n-js/index.js.erb'
 
 const style = {
   width: '60%',
@@ -19,8 +20,8 @@ class WelcomePage extends React.Component {
             <div>
                 <MainNavbar></MainNavbar>
                 <div className="jumbotron">
-                    <h1>Green Minsk</h1>
-                    <p>Care about our planet</p>
+                    <h1>{I18n.t('welcome_page.organization_name')}</h1>
+                    <p>{I18n.t('welcome_page.moto')}</p>
                 </div>
 
                 <div className='container'>
