@@ -1,4 +1,3 @@
-// TODO Add yandex api to maps
 import React from 'react';
 import MainNavbar from 'components/navbar/navbar'
 import I18n from 'i18n-js/index.js.erb'
@@ -9,16 +8,14 @@ import {
   ZoomControl,
   FullscreenControl,
   GeolocationControl,
-  ListBox,
-  ListBoxItem,
-  RouteButton,
-  RouteEditor, RoutePanel, RulerControl, SearchControl, TypeSelector
+  RouteEditor, SearchControl, TypeSelector
 } from "react-yandex-maps";
 
 const mapData = {
   center: [53.9045, 27.5615],
   zoom: 5,
-  controls: []
+  controls: [],
+  apikey: `${ process.env.YANDEX_MAPS_API_KEY }`
 };
 
 const coordinates = [
@@ -26,6 +23,10 @@ const coordinates = [
 ];
 
 class WelcomePage extends React.Component {
+  constructor(props) {
+    super(props);
+  }
+
     render () {
         return (
             <div>
@@ -43,17 +44,6 @@ class WelcomePage extends React.Component {
                       <FullscreenControl />
                       <RouteEditor />
                       <GeolocationControl options={{ float: 'left' }} />
-                      <ListBox data={{ content: 'Select city' }}>
-                        <ListBoxItem data={{ content: 'Moscow' }} />
-                        <ListBoxItem
-                          data={{
-                            content: 'Saint Petersburg',
-                          }}
-                        />
-                      </ListBox>
-                      <RouteButton options={{ float: 'right' }} />
-                      <RoutePanel options={{ float: 'right' }} />
-                      <RulerControl options={{ float: 'right' }} />
                       <SearchControl options={{ float: 'right' }} />
                       <TypeSelector options={{ float: 'right' }} />
 
