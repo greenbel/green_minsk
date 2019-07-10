@@ -29,8 +29,8 @@
 # To learn more, please read the Rails Internationalization guide
 # available at http://guides.rubyonrails.org/i18n.html.
 
-en:
-  hello: "Hello world"
+ru:
+  hello: "Привет мир"
   welcome_page:
     organization_name: 'Green Bel'
-    moto: 'We care about our planet'
+    moto: 'Мы заботимся о нашей планете'
